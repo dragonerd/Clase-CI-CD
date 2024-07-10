@@ -1,0 +1,19 @@
+name: HelloWorld
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  welcome:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: Download You Code
+         uses: actions/checkout@v2
+
+       - name: Say something
+         run: echo "Hello World" 
+  
+
